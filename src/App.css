@@ -17,7 +17,7 @@ body {
 }
 
 .header__img {
-  background-image: url('./assets/rickandmorty4.png');
+  background-image: url('./assets/rickandmorty2.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,11 +59,12 @@ body {
   border-radius: 3px;
   /* background-color: rgba(43, 36, 36, 0.826); */
   /* background-color: rgba(40, 37, 37, 0.826); */
-  background-color: #fbfbfb90;
+  background-color: #fbfbfbbe;
   border-inline: none;
   border: none;
   text-align: center;
-  color: #7e7e7e75;
+  color: #1d1d1dd0;
+  font-weight: 500;
   font-size: 1.3rem;
   border-inline: none;
 }
