@@ -17,7 +17,7 @@ body {
 }
 
 .header__img {
-  background-image: url('./assets/rickandmorty2.png');
+  background-image: url('./assets/rickandmorty20.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +36,7 @@ body {
 
 .search__container {
   position: relative;
-  top: -7rem;
+  top: -8.2rem;
   /* left: 10rem; */
   /* margin-bottom: 1rem; */
   /* padding-bottom: 2rem; */
