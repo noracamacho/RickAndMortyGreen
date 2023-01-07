@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react'
 import ResidentsInfo from './components/ResidentsInfo';
+import Pagination from './components/Pagination';
 import Footer from './components/Footer';
 import './App.css'
 
@@ -14,8 +15,13 @@ function App() {
   const [type, setType] = useState('');
   const [dimension, setDimension] = useState('');
   const [residents, setResidents] = useState([]);
+  //! *********************************************
+  const [loading, setLoading] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage, setPostPerPage] = useState(10);
 
   useEffect(() => {
+    setLoading(true);
     axios.get(`https://rickandmortyapi.com/api/location/${locationId}`)
         .then((response) => setData(response.data))
         // .then(console.log('data', data))
@@ -30,9 +36,11 @@ function App() {
       setType(data.type);
       setDimension(data.dimension);
       setResidents(data.residents);
+      setLoading(false);
     }
   }, [data]);
 
+   //! Limit number entry
   const searchId = () => {
     if(Number(idValue) > 126) {
       alert('The maximum number of locations are 126');
@@ -42,6 +50,14 @@ function App() {
       setIdValue('');
     }
   }
+
+  //! Get current posts
+  const indexLastPost = currentPage * postsPerPage;
+  const indexFirstPost = indexLastPost - postsPerPage;
+  const currentPosts = residents?.slice(indexFirstPost, indexLastPost);
+
+  //! Change page
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div className="App">
@@ -81,11 +97,13 @@ function App() {
           </div>
           {/* {(residents?.length > 0) && <div className='residents__title'>Residents</div>} */}
           <div className="residents__container">
-            {residents?.map(resident => (
+            {/* {residents?.map(resident => ( */}
+            {currentPosts?.map(resident => (
               <ResidentsInfo resident={resident} key={resident} />
             ))}
           </div>
       </div>
+      <Pagination postsPerPage={postsPerPage} totalPosts={residents?.length} paginate={paginate} />
       <Footer />
     </div>
   )

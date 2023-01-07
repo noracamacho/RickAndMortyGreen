@@ -45,16 +45,16 @@ body {
 .search {
   margin: 0 auto;
   display: flex;
-  width: 80%;
+  width: 90.5%;
   height: 7rem;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   /* background-color: rgb(15, 15, 15); */
 }
 
 .search input{
   position: relative;
-  width: 100%;
+  width: 40%;
   height: 3rem;
   border-radius: 3px;
   /* background-color: rgba(43, 36, 36, 0.826); */
@@ -75,7 +75,9 @@ body {
   width: 7rem;
   height: 3.2rem;
   color: #ffff;
-  background: rgba(33, 33, 33, 0.756);
+  background: #05292E;
+
+  /* background: rgba(33, 33, 33, 0.756); */
   border: 2px solid grey;
   font-size: 1.4rem;
 }
@@ -221,6 +223,33 @@ li {
   font-weight: 700;
   line-height: 28.13px;
   margin: 12px;
+}
+
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.page__link {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(70, 64, 64);
+  border-radius: 50%;
+   color: #FBFBFB;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.page__link:hover,
+.page__link:focus{
+  background: #FBFBFB;
+   color: rgb(70, 64, 64);
 }
 
 
