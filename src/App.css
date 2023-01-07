@@ -260,7 +260,8 @@ li {
 }
 
 .page__link:hover,
-.page__link:focus{
+.page__link:focus
+.page__link:active{
   /* background: #FBFBFB; */
   background: #062226;
   scale: 1.1;
