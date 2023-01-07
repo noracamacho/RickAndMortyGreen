@@ -17,12 +17,12 @@ body {
 }
 
 .header__img {
-  background-image: url('./assets/rickandmorty20.png');
+  background-image: url('./assets/rickandmorty21.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 372px;
+  height: 375px;
   margin-bottom: 1rem;
   overflow: hidden;
 }
