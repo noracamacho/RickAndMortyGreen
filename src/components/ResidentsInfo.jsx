@@ -40,8 +40,10 @@ const ResidentsInfo = ({ resident }) => {
                 <li><h4>{name}</h4></li>
                 <li className='status lg'>
                     <div className='dot' style={{ backgroundColor: status == 'Dead' ?  'red' : status == 'Alive' ? 'green' : 'grey'}}></div>
-                    <p>{status} - {species}</p>
+                    <p>{status}</p>
                 </li>
+                <li className='sm'>Species</li>
+                <li className='lg'>{species}</li>
                 <li className='sm'>Origin</li>
                 <li className='lg'>{origin}</li>
                 <li className='sm'>Episodes</li>

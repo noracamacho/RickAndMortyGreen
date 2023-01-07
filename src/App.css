@@ -100,7 +100,7 @@ body {
 
 .location__info {
   position: relative;
-  width: 90.6%;
+  width: 59.1%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -113,7 +113,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 16rem;
+  width: 10rem;
   text-align: left;
 }
 
@@ -144,33 +144,35 @@ body {
 
 .residents__container {
   position: relative;
-  width: 100%;
+  width: 80%;
+  /* align-items: center;
+  align-content: center; */
+  margin: 0 auto;
   justify-content: center;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(auto-fill, 42rem);
+  grid-template-columns: repeat(auto-fill, 27rem);
   /* margin-bottom: 5rem; */
   top: -4rem;
 }
 
 .card {
   position: relative;
-  width: 42rem;
-  height: 17rem;
+  width: 27.31rem;
+  height: 43.5rem;
   /* background-color: rgba(40, 37, 37, 0.826); */
-  background-color: #062226;;
-  border-radius: 10px;
+  background: #062226;
+  border-radius: 0px 0px 4px 4px;
   overflow: hidden;
 }
 
 .card img {
-  width: 17rem;
+  width: 27.31rem;
   height: auto;
   position: absolute;
   left: 0;
   top: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+    border-radius: 4px 4px 0px 0px;
   overflow: hidden;
 }
 
@@ -181,8 +183,8 @@ body {
   justify-content: space-around;
   align-items: center;
   text-align: left;
-  left: 17.3rem;
-  margin: 1rem 0;
+  bottom: 0;
+  left: .5rem;
   color: #FBFBFB;
 }
 
@@ -194,14 +196,22 @@ li h4 {
 }
 
 .status {
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
+  top: -24rem;
+  left: -1.3rem;
+  background: #062226;
+  border-radius: 0px 12px 12px 0px;
+  width: 180px;
+  height: 42px;
+  padding-left: .5rem;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   background-color: #ffff;
   border-radius: 50%;
   margin-right: 6px;
@@ -233,7 +243,6 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* margin-bottom: 1rem; */
 }
 
 .page__link {
@@ -251,8 +260,10 @@ li {
 
 .page__link:hover,
 .page__link:focus{
-  background: #FBFBFB;
-   color: rgb(70, 64, 64);
+  /* background: #FBFBFB; */
+  background: #062226;
+  scale: 1.1;
+   /* color: rgb(70, 64, 64); */
 }
 
 
