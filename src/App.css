@@ -148,8 +148,8 @@ body {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, 42rem);
-  margin-bottom: 5rem;
-  top: -3rem;
+  /* margin-bottom: 5rem; */
+  top: -4rem;
 }
 
 .card {
@@ -159,6 +159,7 @@ body {
   /* background-color: rgba(40, 37, 37, 0.826); */
   background-color: #062226;;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .card img {
@@ -225,12 +226,13 @@ li {
   margin: 12px;
 }
 
-
 .pagination {
+  position: relative;
+  bottom: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .page__link {

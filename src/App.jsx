@@ -78,7 +78,7 @@ function App() {
             {/* <h2>{name}</h2> */}
             <div className="location__info">
             <div>
-                <h5>Nombre: </h5>
+                <h5>Name: </h5>
                 <p>{name} </p>
               </div>
               <div className='population'>
