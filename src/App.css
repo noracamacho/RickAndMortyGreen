@@ -37,7 +37,8 @@ body {
 .search__container {
   position: relative;
   top: -8.2rem;
-  left: 9rem;
+  left: 0rem;
+  margin-left: 4.5rem;
   /* left: 10rem; */
   /* margin-bottom: 1rem; */
   /* padding-bottom: 2rem; */
@@ -101,7 +102,7 @@ body {
 
 .location__info {
   position: relative;
-  /* width: 59.1%; */
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -114,7 +115,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 10rem;
+  width: 15rem;
   text-align: left;
 }
 
@@ -154,7 +155,7 @@ body {
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, 27rem);
   /* margin-bottom: 5rem; */
-  top: -4rem;
+  top: -5rem;
 }
 
 .card {
