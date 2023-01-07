@@ -86,7 +86,7 @@ body {
 
 .location {
   position: relative;
-  top: -6rem;
+  top: -8rem;
   /* margin-top: 3rem; */
   /* background: #062226; */
   text-align: center;
@@ -101,7 +101,7 @@ body {
 
 .location__info {
   position: relative;
-  width: 59.1%;
+  /* width: 59.1%; */
   margin: 0 auto;
   display: flex;
   flex-direction: row;
