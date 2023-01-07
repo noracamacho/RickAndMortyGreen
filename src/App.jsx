@@ -15,6 +15,7 @@ function App() {
   const [type, setType] = useState('');
   const [dimension, setDimension] = useState('');
   const [residents, setResidents] = useState([]);
+  const [placeholderText, setPlaceholderText] = useState('Type a location Id')
   //! *********************************************
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -27,11 +28,11 @@ function App() {
         // .then(console.log('data', data))
         .catch((error) => console.log('error', error));
 
-  },[locationId]);
+  },[locationId]);  
 
   useEffect(() => {
     if (data) {
-      console.log(data)
+      // console.log(data)
       setName(data.name);
       setType(data.type);
       setDimension(data.dimension);
@@ -69,7 +70,7 @@ function App() {
 
           <div className="search__container">
             <div className="search">
-              <input type="text" value={idValue} onChange={e => setIdValue(e.target.value)} placeholder='Type a location Id' />
+              <input type="text" value={idValue} onChange={e => setIdValue(e.target.value)} placeholder={placeholderText} />
               <button onClick={searchId}>Search</button>
             </div>
           </div>

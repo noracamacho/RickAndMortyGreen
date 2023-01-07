@@ -67,6 +67,7 @@ body {
   font-weight: 500;
   font-size: 1.3rem;
   border-inline: none;
+  outline: none;
 }
 
 .search button {
