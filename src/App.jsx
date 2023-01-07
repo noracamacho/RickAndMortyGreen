@@ -82,7 +82,7 @@ function App() {
                 <h5>Name: </h5>
                 <p>{name} </p>
               </div>
-              <div className='population'>
+              <div>
                 <h5 className='type'>Type: </h5>
                 <p>{type} </p>
               </div>

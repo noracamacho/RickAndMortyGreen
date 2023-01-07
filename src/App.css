@@ -37,6 +37,7 @@ body {
 .search__container {
   position: relative;
   top: -8.2rem;
+  left: 9rem;
   /* left: 10rem; */
   /* margin-bottom: 1rem; */
   /* padding-bottom: 2rem; */
@@ -118,7 +119,7 @@ body {
 }
 
 .population {
-  width: 8rem !important;
+  width: 6rem !important;
 }
 
 .location__info h5 {
