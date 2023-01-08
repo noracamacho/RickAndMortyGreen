@@ -63,7 +63,6 @@ function App() {
     } else {
         let matches = locations.filter((location) => {
             const regex = new RegExp(`${text}`, 'gi');
-            console.log('1', location.name);
             return location.name.match(regex);
         });
         setLocationMatch(matches);
