@@ -128,3 +128,5 @@ let names = [
 ];
 // Sort names in ascending order
 let sortedNames = names.sort();
+
+export default names;

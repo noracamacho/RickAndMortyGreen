@@ -17,7 +17,7 @@ body {
 }
 
 .header__img {
-  background-image: url('./assets/rickandmorty21.png');
+  background-image: url('./assets/rickandmorty20.png');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +25,10 @@ body {
   height: 375px;
   margin-bottom: 1rem;
   overflow: hidden;
+}
+
+LiveSearch {
+  color: #FBFBFB;
 }
 
 /* .title {
@@ -44,7 +48,30 @@ body {
   /* padding-bottom: 2rem; */
   /* background: grey; */
 }
-.search {
+.results__container {
+  position: absolute;
+  top: 21.2rem;
+  left: 8.8rem;
+  width: 32.5rem;
+  /* margin-left: 4.5rem; */
+  text-align: left;
+  color: #7E7E7E;
+  background: whitesmoke;
+  z-index: 10;
+}
+
+.location__option {
+  padding: .01rem;
+  cursor: pointer;
+}
+
+.location__option:hover {
+  color: #FBFBFB;
+  background:  #062226;
+
+}
+.search,
+.searchInputs {
   margin: 0 auto;
   display: flex;
   width: 90.5%;
@@ -53,15 +80,33 @@ body {
   align-items: center;
   /* background-color: rgb(15, 15, 15); */
 }
+.searchIcon {
+  height: 3rem;
+  width: 60px;
+  /* background-color: white; */
+  /* background-color: #fbfbfbbe; */
+  background-color: #fbfbfbe9;
+  /* border-left: 1px #fbfbfbbe; */
+  color: #062226;
+  display: grid;
+  place-items: center;
+  
+}
 
-.search input{
+.serachIcon svg {
+  font-size: 35px;
+}
+
+.search input,
+.searchInputs input{
   position: relative;
   width: 40%;
   height: 3rem;
   border-radius: 3px;
   /* background-color: rgba(43, 36, 36, 0.826); */
   /* background-color: rgba(40, 37, 37, 0.826); */
-  background-color: #fbfbfbbe;
+  /* background-color: #fbfbfbbe; */
+  background-color: #fbfbfbe9;
   border-inline: none;
   border: none;
   text-align: center;
@@ -70,6 +115,45 @@ body {
   font-size: 1.3rem;
   border-inline: none;
   outline: none;
+}
+
+.dataResults {
+  position: absolute;
+  top: 5rem;
+  left: 4.3rem;
+  /* margin-top: 1px; */
+  width: 40.3%;
+  height: 200px;
+  /* background-color: whitesmoke; */
+  background-color: #fbfbfbe9;
+  /* box-shadow: rgba(0,0,0,0.35) 0px 5px 15px; */
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.dataResults::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResults .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: #062226;
+}
+
+.dataItem:hover{
+  background-color: lightgrey;
+  cursor: pointer;
+}
+.dataItem p {
+  margin-left: 1rem;
+}
+
+#clearBtn {
+  cursor: pointer;
 }
 
 .search button {
@@ -117,6 +201,13 @@ body {
   justify-content: space-between;
   width: 15rem;
   text-align: left;
+}
+.location__name {
+  width: 20rem !important;
+}
+
+.location__type {
+  width: 15rem !important;
 }
 
 .population {
@@ -245,6 +336,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* width: fit-content; */
 }
 
 .page__link {
@@ -258,6 +350,7 @@ li {
    color: #FBFBFB;
    cursor: pointer;
    text-decoration: none;
+   margin: -5px;
 }
 
 .page__link:hover,
