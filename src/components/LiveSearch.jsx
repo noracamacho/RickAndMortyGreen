@@ -51,7 +51,7 @@ function LiveSearch() {
                 </div>
             </div>
             <div className='results__container'>
-                <ul>
+                <ul className='result__window'>
                 {locationMatch && locationMatch.map((item, index) => (
                     <div className='location__option' key={index}>
                         <p style={{marginLeft: '1rem', padding: '7px'}} onClick={() => { setLocationId(item.id); setLocationMatch([]); setEnteredWord(item.name)}}>{item.name} {item.id}</p>    

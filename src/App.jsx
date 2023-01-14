@@ -87,8 +87,9 @@ function App() {
 
         {/* <SearchBar placeHolder={'Type a location name'} data={names}/> */}
         {/* <LiveSearch /> */}
+        {/* ++++++++++++++++++ */}
+        {/* SEARCH */}
         <div className="results">
-            {/* ++++++++++++++++++ */}
             <div className="search__container">
                 <div className="search">
                 <input type="text" value={enteredWord} onChange={(e) => {searchLocations(e.target.value); setEnteredWord(e.target.value)}} placeholder= 'Enter location name' />

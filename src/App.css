@@ -48,17 +48,6 @@ LiveSearch {
   /* padding-bottom: 2rem; */
   /* background: grey; */
 }
-.results__container {
-  position: absolute;
-  top: 21.2rem;
-  left: 8.8rem;
-  width: 32.5rem;
-  /* margin-left: 4.5rem; */
-  text-align: left;
-  color: #7E7E7E;
-  background: whitesmoke;
-  z-index: 10;
-}
 
 .location__option {
   padding: .01rem;
@@ -74,7 +63,7 @@ LiveSearch {
 .searchInputs {
   margin: 0 auto;
   display: flex;
-  width: 90.5%;
+  width: 100%;
   height: 7rem;
   justify-content: left;
   align-items: center;
@@ -90,7 +79,6 @@ LiveSearch {
   color: #062226;
   display: grid;
   place-items: center;
-  
 }
 
 .serachIcon svg {
@@ -103,6 +91,8 @@ LiveSearch {
   width: 40%;
   height: 3rem;
   border-radius: 3px;
+  margin-left: 6%;
+
   /* background-color: rgba(43, 36, 36, 0.826); */
   /* background-color: rgba(40, 37, 37, 0.826); */
   /* background-color: #fbfbfbbe; */
@@ -115,6 +105,54 @@ LiveSearch {
   font-size: 1.3rem;
   border-inline: none;
   outline: none;
+}
+
+.location__option {
+  position: relative;
+  background-color: #fbfbfbe9;
+  width: 40%;
+  margin-left: 6%;
+
+}
+.results__container {
+  position: relative;
+  top: -10.2rem;
+  left: 0rem;
+  /* width: 95%; */
+  margin-left: 4.5rem;
+  /* margin-left: 10.5%; */
+  /* position: absolute;
+  top: 21.2rem;
+  left: 8.8rem;
+  width: 32.5rem; */
+  /* margin-left: 4.5rem; */
+  text-align: left;
+  color: #7E7E7E;
+  /* background: whitesmoke; */
+  /* background-color: red; */
+  z-index: 10;
+}
+
+
+.result__window {
+  position: relative;
+  /* width: 249px; */
+  height: 3rem;
+  border-radius: 3px;
+  /* background-color: rgba(43, 36, 36, 0.826); */
+  /* background-color: rgba(40, 37, 37, 0.826); */
+  /* background-color: #fbfbfbbe; */
+  /* background-color: #fbfbfbe9; */
+  background-color: red;
+  border-inline: none;
+  border: none;
+  text-align: center;
+  color: #1d1d1dd0;
+  font-weight: 500;
+  font-size: 1.3rem;
+  border-inline: none;
+  outline: none;
+
 }
 
 .dataResults {
