@@ -431,13 +431,13 @@ li {
   .card {
     width: 90vw;
     margin: 0 auto;
-    height: 38.5rem;
+    height: 45.5rem;
   }
   .status {
-    top: -20rem;
+    top: -25rem;
   }
   .location__info {
-    width: 90vw;
+    width: 97vw;
     flex-direction: column;
     z-index: -5;
   }
@@ -477,6 +477,12 @@ li {
   }
 }
 @media screen and (max-width: 460px){
+  .card {
+    height: 40.5rem;
+  }
+  .status {
+    top: -23rem;
+  }
   .search input,
   .searchInputs input{
     position: relative;
