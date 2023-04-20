@@ -12,11 +12,13 @@ function LiveSearch() {
      //* ----------------------------------------------------------------------
     useEffect(() => {
         const loadLocations = async () => {
-            const response = await axios.get('https://rickandmortyapi.com/api/location');
+            const response = await axios.get('https://rickandmortyapi.com/api/location?offset=0&limit=1000000');
             setLocations(response.data.results);
+            console.log('locations', locations)
         };
         loadLocations();
     }, []);
+
 
     useEffect(() => {
         axios.get(`https://rickandmortyapi.com/api/location/${locationId}`)

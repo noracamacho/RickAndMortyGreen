@@ -298,7 +298,7 @@ LiveSearch {
 }
 
 .card img {
-  width: 27.31rem;
+  width: 100%;
   height: auto;
   position: absolute;
   left: 0;
@@ -334,8 +334,8 @@ li h4 {
   top: -24rem;
   left: -1.3rem;
   background: #062226;
-  border-radius: 0px 12px 12px 0px;
-  width: 180px;
+  border-radius: 0px 6px 6px 0px;
+  width: 130px;
   height: 42px;
   padding-left: .5rem;
 }
@@ -425,4 +425,71 @@ li {
   font-weight: bold;
   cursor: pointer;
   word-spacing: normal;
+}
+
+@media screen and (max-width: 550px){
+  .card {
+    width: 90vw;
+    margin: 0 auto;
+    height: 38.5rem;
+  }
+  .status {
+    top: -20rem;
+  }
+  .location__info {
+    width: 90vw;
+    flex-direction: column;
+    z-index: -5;
+  }
+  .location__info div {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+    z-index: -5;
+  }
+  .location__name, 
+  .location__type,
+  .population {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .location__info h5 {
+    margin-bottom: 0rem;
+    padding-right: 1.5rem;
+  }
+  .search input,
+  .searchInputs input{
+    position: relative;
+    width: 60%;
+    margin-left: 0;
+    font-size: 1rem;
+    text-align: left;
+    padding-inline-start: 1.5rem;
+  }
+  .location__option {
+    width: 60%;
+    margin-left: 0;
+    
+  }
+}
+@media screen and (max-width: 460px){
+  .search input,
+  .searchInputs input{
+    position: relative;
+    width: 70%;
+    margin-left: -1rem;
+    font-size: 1rem;
+    text-align: left;
+    padding-inline-start: 1.5rem;
+  }
+  .location__option {
+    width: 70%;
+    margin-left: -1rem;
+  }
+
+
 }
