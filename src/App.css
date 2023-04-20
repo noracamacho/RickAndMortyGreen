@@ -445,7 +445,7 @@ li {
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-    padding: .4rem;
+    padding: .4rem 0;
     width: 100%;
     z-index: -5;
   }
